@@ -1,0 +1,30 @@
+.justify-text{
+    text-align: justify;
+}
+
+.about-us-image img{
+border-radius: 80%;
+}
+
+
+.about-us-section{
+    background-color: #E1F4F3
+}
+.about-us-section-header{
+    background-color: #FFFCEF;
+    color: #112D4E;
+    margin-bottom: 2px;
+    padding: 2px;
+    
+}
+
+@media (max-width:700px) {
+    .about-us-row-container{
+        display: grid;
+            grid-template-columns: 1fr;
+}
+.about-us-row-container-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+}
+}

@@ -1,0 +1,12 @@
+.registration-section{
+    
+}
+
+@media (max-width:700px) {
+    
+    .registration-div input{
+        width: 100%;
+        
+  }
+ 
+}

@@ -1,0 +1,31 @@
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.services-section{
+    background-color: #FFFCEF;
+}
+.services-section-header{
+    color: #112D4E;
+    margin-bottom: 2px;
+    padding: 2px;
+    
+    
+    
+}
+.single-service-card{
+    border: 2px solid cadetblue;
+}
+body{
+    background-color: #FFFCEF;
+}
+/* E1F4F3 */
+
+@media (max-width:700px) {
+    .services-container{
+        display: grid;
+            grid-template-columns: 1fr;
+}
+}

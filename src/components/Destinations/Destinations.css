@@ -1,0 +1,25 @@
+.destination-section{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-bottom: 10px;
+}
+.destination-single-card{
+    background-color: #c7ebe9;
+    margin: 4px 5px;
+    border: 2px solid rgba(152, 154, 255, 0.973);
+    box-shadow: 5px 5px 5px 1px;
+}
+
+@media (max-width:700px) {
+    .destination-section{
+        display: grid;
+            grid-template-columns: 1fr;
+}
+.destination-single-card img{
+    width: 100%;
+}
+.destination-single-card h6{
+    font-size: 20px;
+    font-weight: 700;
+}
+}

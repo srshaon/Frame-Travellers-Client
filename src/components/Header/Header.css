@@ -1,0 +1,18 @@
+
+
+.header-container{
+    background-color: #303841c7;
+    color: white;
+}
+.navlinks, .log-out-btn {
+    border: 2px solid rgb(245, 248, 211);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px;
+}
+.log-out-btn{
+    background-color: transparent;
+    color: whitesmoke;
+}
+.span-user-name{
+    text-decoration: underline;
+}

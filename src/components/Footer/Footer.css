@@ -1,0 +1,56 @@
+
+
+.footer-section-container{
+    
+  background-color: #c7ebe9;
+    display: flex;
+    
+    justify-content: center;
+    
+}
+.insta{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+          /* Also define standard property for compatibility */
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.email-box {
+    font-weight: 700;
+    border: 2px solid black;
+    background: rgba(238, 238, 230, 0.904);
+    padding-right: 10px;
+    border-radius: 5px;
+  }
+.subscribe-btn{
+  
+    font-weight: bold;
+    background-color: rgba(255, 255, 0, 0.589);
+    border-radius: 5px;
+    width: 75%;
+}
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width:700px) {
+  .footer-container-row{
+      display: grid;
+          grid-template-columns: 1fr;
+          margin: 0;
+          padding: 0;
+}
+.footer-mid-column{
+  width: 100%;
+  margin: 10px 0;
+}
+.footer-section-container{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+  
+}
+}
