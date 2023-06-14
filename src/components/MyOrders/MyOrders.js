@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     const [allorders, setAllorders] = useState([]);
     useEffect(() => {
-        fetch('https://immense-waters-81746.herokuapp.com/orders')
+        fetch('https://frame-travellers.onrender.com/orders')
             .then(res => res.json())
             .then(data => setAllorders(data))
     }, [])
@@ -20,7 +20,7 @@ const MyOrders = () => {
         console.log(id);
         const proceed = window.confirm('are you sure?');
         if (proceed) {
-            const url = `https://immense-waters-81746.herokuapp.com/orders/${id}`;
+            const url = `https://frame-travellers.onrender.com/orders/${id}`;
             fetch(url, {
                 method: 'delete'
             })

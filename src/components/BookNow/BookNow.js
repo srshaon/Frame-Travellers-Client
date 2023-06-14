@@ -14,7 +14,7 @@ const BookNow = () => {
     const url = "/myorders"
     const [service, setService] = useState({});
     useEffect(() => {
-        fetch(`https://immense-waters-81746.herokuapp.com/packages/${_id}`)
+        fetch(`https://frame-travellers.onrender.com/packages/${_id}`)
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -27,7 +27,7 @@ const BookNow = () => {
         data.order = orderedService;
         console.log(data);
 
-        fetch('https://immense-waters-81746.herokuapp.com/orders', {
+        fetch('https://frame-travellers.onrender.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

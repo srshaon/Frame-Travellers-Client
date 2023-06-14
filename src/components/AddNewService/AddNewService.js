@@ -13,7 +13,7 @@ const AddNewService = () => {
 
     const onSubmit = data => {
         console.log(data)
-        axios.post('https://immense-waters-81746.herokuapp.com/packages', data)
+        axios.post('https://frame-travellers.onrender.com/packages', data)
             .then(res => {
                 console.log(res)
                 if (res.data.insertedId) {

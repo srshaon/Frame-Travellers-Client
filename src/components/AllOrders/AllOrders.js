@@ -5,7 +5,7 @@ import { Spinner } from 'react-bootstrap';
 const AllOrders = () => {
     const [allorders, setAllorders] = useState([]);
     useEffect(() => {
-        fetch('https://immense-waters-81746.herokuapp.com/orders')
+        fetch('https://frame-travellers.onrender.com/orders')
             .then(res => res.json())
             .then(data => setAllorders(data))
     }, [])
@@ -14,7 +14,7 @@ const AllOrders = () => {
         console.log(id);
         const proceed = window.confirm('are you sure?');
         if (proceed) {
-            const url = `https://immense-waters-81746.herokuapp.com/orders/${id}`;
+            const url = `https://frame-travellers.onrender.com/orders/${id}`;
             fetch(url, {
                 method: 'delete'
             })
@@ -34,7 +34,7 @@ const AllOrders = () => {
         // console.log(newStatus);
         const proceed = window.confirm('are you sure?');
         if (proceed) {
-            const url = `https://immense-waters-81746.herokuapp.com/orders/${id}`;
+            const url = `https://frame-travellers.onrender.com/orders/${id}`;
             fetch(url, {
                 method: 'put'
 
@@ -44,7 +44,7 @@ const AllOrders = () => {
                     if (data.modifiedCount > 0) {
                         alert('Order Confirmed Successfully')
 
-                        fetch('https://immense-waters-81746.herokuapp.com/orders')
+                        fetch('https://frame-travellers.onrender.com/orders')
                             .then(res => res.json())
                             .then(data => setAllorders(data))
                     }
